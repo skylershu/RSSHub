@@ -1083,6 +1083,42 @@ IT・科学 tech_science
 
 </Route>
 
+## 广州日报
+
+### 客户端
+
+<Route author="TimWu007" example="/gzdaily/app/74" path="/gzdaily/app/:column?" :paramsDesc="['栏目 ID，点击对应栏目后在地址栏找到']">
+
+::: tip 提示
+
+在北京时间深夜可能无法获取内容。
+
+:::
+
+常用栏目 ID：
+
+| 栏目名 | ID   |
+| ------ | ---- |
+| 首页   | 74   |
+| 时局   | 374  |
+| 广州   | 371  |
+| 大湾区 | 397  |
+| 城区   | 2980 |
+
+</Route>
+
+### 新花城（广州市融媒体中心）
+
+<Route author="TimWu007" example="/gzdaily/cmc/shouye" path="/gzdaily/cmc/:channel?" :paramsDesc="['频道名']">
+
+::: tip 提示
+
+`频道名（channel）` 可在对应频道 url 后的参数中获取，如 `首页` 的栏目 url 为`https://huacheng.gz-cmc.com/channel/shouye/index.html`, `频道名` 即为 `shouye`。
+
+:::
+
+</Route>
+
 ## 国际金融报栏目
 
 ### 栏目
@@ -2293,6 +2329,24 @@ category 对应的关键词有
 ### 电子报
 
 <Route author="MisteryMonster" example="/bjnews/epaper/A" path="/bjnews/epaper/:cat" :paramsDesc="['新京报叠名：`A`,`B`,`C`,`D`, 特刊为`special`']"/>
+
+## 新快报
+
+### 新闻
+
+<Route author="TimWu007" example="/xkb/350" path="/xkb/:channel" :paramsDesc="['栏目 ID，点击对应栏目后在地址栏找到']">
+
+常用栏目 ID：
+
+| 栏目名 | ID  |
+| ------ | --- |
+| 首页   | 350 |
+| 重点   | 359 |
+| 广州   | 353 |
+| 湾区   | 360 |
+| 天下   | 355 |
+
+</Route>
 
 ## 新蓝网（浙江广播电视集团）
 
